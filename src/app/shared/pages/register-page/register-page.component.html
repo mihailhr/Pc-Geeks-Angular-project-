@@ -1,0 +1,34 @@
+<div class="main">
+<h2>Still not a part of PC Geeks?</h2>
+<h1>Registration form</h1>
+<form (submit)="onSubmit($event,emailInput.value,passwordInput.value,rePassInput.value)">
+<div class="form-group" id="emailDiv">
+    <label for="email">Email</label>
+    <input type="email" name="email" #emailInput id="email" required>
+</div>
+<div class="form-group" id="passwordDiv">
+    <label for="password">Password</label>
+    <input type="password" name="password" #passwordInput id="password" required>
+</div>
+<div class="form-group" id="rePassDiv">
+    <label for="rePass">Confirm password</label>
+    <input type="password" name="rePass" #rePassInput id="rePass" required>
+</div>
+<button class="subButton"  type="submit">Submit</button>
+</form>
+<h2>Already have an account?</h2>
+<button class="signInButton"  (click)="clickHandler()">Sign in</button>
+</div>
+<section class="info">
+    <h1>Registration requirements:</h1>
+        <p>Enter a valid email (Example: user&#64;abv.bg)</p>
+        <p>The password should have a length of atleast 8 characters</p>
+        <p>The password and the confirmed password must match</p>
+</section>
+<section class="info2">
+    <h1>Why should I register?</h1>
+        <p>Gain access to our discussions</p>
+        <p>To post and update news</p>
+        <p>View all activities related to your account</p>
+        <p>Rate the website</p>
+</section>

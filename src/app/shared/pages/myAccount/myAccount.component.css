@@ -1,0 +1,66 @@
+.main{width: 100vw;
+    box-sizing: border-box;
+background-color: orangered;
+height: 78vh;
+display: flex;
+flex-direction: row;
+padding-top: 100px;}
+
+.first{width: 33vw;background-color: rgb(30, 30, 30);
+color: whitesmoke;}
+
+.second{width: 34vw;
+background-color: orangered;
+border: 4px solid rgb(30, 30, 30);}
+.third{width: 33vw;
+background-color: bisque;
+background-color: rgb(30, 30, 30);
+color: whitesmoke;}
+section{
+    text-align: center;
+    padding-top: 10px;
+}
+#submitInput{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.additional{
+    position: fixed;
+    right: 60px;
+    bottom: 200px;
+    color: white;
+}
+h3{padding-top: 50px;
+padding-left: 20px;
+padding-right: 20px;}
+.scrollableDiv {
+    margin-left: 15px ;
+    margin-top: 20px;
+    width: 32vw;
+    height: 50vh;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+.scrollableDiv1{
+    margin-left: 5px ;
+    margin-top: 0px;
+    width: 32vw;
+    height: 50vh;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+ .scrollableDiv1 p{
+    margin: 5px; 
+    padding: 10px; 
+    border: 3px solid whitesmoke;
+}
+.scrollableDiv p{
+    margin: 5px; 
+    padding: 10px; 
+    border: 3px solid rgb(30, 30, 30);
+}
