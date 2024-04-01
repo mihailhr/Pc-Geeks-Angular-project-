@@ -1,0 +1,75 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+.left{width: 50vw;
+    box-sizing: border-box;
+    padding-top: 80px;
+background-color: aqua;
+height: 78vh;
+padding-left: 20px;
+padding-right: 20px;
+background-color: orangered;
+z-index: -5;
+border-right: 5px solid rgb(30, 30, 30);
+}
+
+.left p{max-width: 22vw;}
+.left section{display: flex;
+gap: 40px;}
+.left p{text-indent: 10px;
+font-size: 18px;
+line-height: 1,6;}
+.left h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.leftP, .rightP{color: whitesmoke;
+background-color: rgb(30, 30, 30);
+padding: 10px;}
+.main{width: 100vw;
+display: flex;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 600;
+z-index: -5;}
+.upper{height: 39vh;
+background-color: orangered;
+color: whitesmoke;
+width: 50vw;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-sizing: border-box;
+padding: 20px;}
+.upper p, .lower p{text-align: center;}
+.right{
+    z-index: -5;
+}
+i{color: whitesmoke;}
+.lower{background-color: rgb(30, 30, 30);
+color: orangered;
+height: 39vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-sizing: border-box;
+padding: 20px;
+}
+h1{z-index: 10;}
+
+.discussionsIcon{
+    position: fixed;
+    top: 310px;
+    right: 360px;
+    font-size: 50px;
+}
+.newsIcon{
+    position: fixed;
+    bottom: 70px;
+    right: 360px;
+    font-size: 50px;
+}
+
+
+
