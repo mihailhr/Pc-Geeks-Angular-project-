@@ -1,0 +1,55 @@
+<section>
+<div class="leftPart">
+    <h1>Recent news:</h1>
+   
+</div>
+<div class="rightPart" *ngIf="userInfo.userLoggedIn" >
+    <article class="upper">
+        <h1>Your publications:</h1>
+    </article>
+    <article class="lower">
+        <h1>Post news:</h1>
+        
+    </article>
+    
+    
+</div>
+<div class="rightPartNotLoggedIn" *ngIf="!userInfo.userLoggedIn">
+    <h1>You need to be logged in to post or edit your publications.</h1>
+</div>
+</section>
+
+<section class="postNews" *ngIf="userInfo.userLoggedIn">
+    <form  id="myForm" (submit)="onSubmitNews($event,titleInput.value,descriptionInput.value)">
+        <div class="form-group" id="emailDiv">
+            <label for="title">Title</label> <br>
+            <input type="text" name="email" placeholder="The title is going to be..." #titleInput id="title" required>
+        </div>
+        <div class="form-group" id="passwordDiv">
+            <label for="description">Description</label> <br>
+            <textarea type="text" placeholder="This post is about..." name="description" #descriptionInput id="description" required></textarea>
+        </div>
+        <button class="subButton"  type="submit">Submit</button>
+        </form>
+</section>
+
+
+<div class="scrollable-field">
+    
+        <div *ngFor="let entry of getObjectEntries(allNews)" class="entry">
+          <div class="titleValue">{{ entry[1].title }}</div>
+          <div class="description">{{ entry[1].description }}</div>
+          <div class="user">{{ entry[1].user }}</div>
+        </div>
+      </div>
+
+<div  class="scrollableDivMyNews"  *ngIf="finalKeys.length>0"   >
+    <p *ngFor="let key of finalKeys">Title: {{allMyNews[key].title}} <button (click)="editHandler(key)"><i class="fa-regular fa-pen-to-square"></i></button> <button (click)="deleteHandler(key)" ><i class="fa-regular fa-trash-can"></i></button> <br> Description: {{allMyNews[key].description}} </p> 
+        
+</div>
+<section  class="scrollableDivMyNews0"  *ngIf="userInfo.userLoggedIn"   >
+    <h1 *ngIf="finalKeys.length<1"> You still haven't posted any news.</h1> 
+        
+</section>
+
+   

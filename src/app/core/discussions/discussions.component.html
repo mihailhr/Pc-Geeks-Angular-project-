@@ -1,0 +1,45 @@
+
+<div class="styled" *ngIf="userInfo.userLoggedIn">
+<section class="left">
+    <article>
+        <h1>What is the point of The Discussion?</h1>
+        <p>Our idea of discussion resembles a never ending chat - a place where everyone can share what's on their mind, ask questions or help others out in real time. The specific thing is that it is easy to track how the topic has changed and lead it to a new direction - you can view every single post, starting from the first one, and put in your two cents without worrying about being misunderstood- previous contributions to the discussion cannot be deleted nor edited and will stay there forever.</p>
+    </article>
+</section>
+<section class="right" *ngIf="userInfo.userLoggedIn">
+    <section class="top">
+        <span>Join The Discussion ➔</span>
+    </section>
+    <section class="bottom">
+       
+    </section>
+</section>
+</div>
+<div  class="form" *ngIf="userInfo.userLoggedIn">
+    <form (submit)="discussionSubmit($event,titleInput.value,contentInput.value)">
+        <div class="form-group">
+            <label for="Title">Title</label><br>
+            <input type="text" placeholder="Your title" #titleInput id="title" required> <br>
+            <label for="Content">Content</label><br>
+            <textarea type="text" placeholder="Post content" #contentInput id="content" required></textarea> <br>
+            <button type="submit"> Post</button>
+        </div>
+    </form>
+</div>
+
+
+<div class="notUser" *ngIf="!userInfo.userLoggedIn"><h1>You need to sign in to access The Discussion.</h1></div>
+<div  *ngIf="userInfo.userLoggedIn" class="scrollableDiv">
+<section  class="second">
+ 
+    <div  *ngIf="keys.length>0"  class="scrollableDiv2" >
+    <p *ngFor="let key of keys">  {{allDiscussions[key].title}} ~~~~ {{allDiscussions[key].user}} <br> {{allDiscussions[key].content}}   </p>
+    <h2  *ngIf="userInfo.currentUser"  class="title">The Discussion:</h2>
+    
+  </div>
+    <h3 *ngIf="keys.length<1" > The Discussion still has not started.</h3>
+  </section>
+</div>
+
+
+<h2  *ngIf="userInfo.currentUser"  class="title">The Discussion:</h2>

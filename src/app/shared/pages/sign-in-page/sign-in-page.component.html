@@ -1,0 +1,22 @@
+<div class="main">
+    <h2>We are glad you're here!</h2>
+    <h1>Sign in:</h1>
+    <form (submit)="onSubmit($event,emailInput.value,passwordInput.value)">
+        <div class="form-data" id="emailField">
+            <label  for="email">Email</label>
+            <input type="email" name="email" #emailInput id="email" required>
+        </div>
+        <div class="form-data" id="passwordField">
+            <label for="password">Password</label>
+            <input type="text" name="password" #passwordInput id="password" required>
+        </div>
+        <button class="subButton" type="submit">Submit</button>
+    </form>
+    <section>
+        <h2>Not a member?</h2>
+        <button type="button" class="regButton"  (click)="clickHandler()">Register</button>
+        
+    </section>
+</div>
+
+

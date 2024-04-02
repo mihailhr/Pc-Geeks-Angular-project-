@@ -1,0 +1,2 @@
+<button *ngIf="userInfo.userLoggedIn" (click)="clickHandler()">Welcome, {{userInfo.currentUser|emailTransformPipe}}</button>
+<button *ngIf="!userInfo.userLoggedIn" (click)="clickHandlerGuest()">Welcome, guest</button>
