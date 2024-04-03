@@ -1,0 +1,11 @@
+<div  class="form" *ngIf="userInfo.userLoggedIn">
+  <form (submit)="discussionSubmit($event,titleInput.value,contentInput.value)">
+      <div class="form-group">
+          <label for="Title">Title</label><br>
+          <input type="text" placeholder="Your title" #titleInput id="title" required> <br>
+          <label for="Content">Content</label><br>
+          <textarea type="text" placeholder="Post content" #contentInput id="content" required></textarea> <br>
+          <button type="submit"> Post</button>
+      </div>
+  </form>
+</div>

@@ -1,0 +1,8 @@
+<div  class="scrollableDivMyNews"  *ngIf="finalKeys.length>0"   >
+  <p *ngFor="let key of finalKeys">Title: {{allMyNews[key].title}} <button (click)="editHandler(key)"><i class="fa-regular fa-pen-to-square"></i></button> <button (click)="deleteHandler(key)" ><i class="fa-regular fa-trash-can"></i></button> <br> Description: {{allMyNews[key].description}} </p> 
+      
+</div>
+<section  class="scrollableDivMyNews0"  *ngIf="userInfo.userLoggedIn"   >
+  <h1 *ngIf="finalKeys.length<1"> You still haven't posted any news.</h1> 
+      
+</section>

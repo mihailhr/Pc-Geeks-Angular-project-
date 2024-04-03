@@ -1,0 +1,22 @@
+
+<div class="styled" *ngIf="userInfo.userLoggedIn">
+<section class="left">
+    <article>
+        <h1>What is the point of The Discussion?</h1>
+        <p>Our idea of discussion resembles a never ending chat - a place where everyone can share what's on their mind, ask questions or help others out in real time. The specific thing is that it is easy to track how the topic has changed and lead it to a new direction - you can view every single post, starting from the first one, and put in your two cents without worrying about being misunderstood- previous contributions to the discussion cannot be deleted nor edited and will stay there forever.</p>
+    </article>
+</section>
+<section class="right" *ngIf="userInfo.userLoggedIn">
+    <section class="top">
+        <span>Join The Discussion ➔</span>
+    </section>
+    <section class="bottom">
+       
+    </section>
+</section>
+</div>
+<h2  *ngIf="userInfo.currentUser"  class="title">The Discussion:</h2>
+<app-discussionSubmit></app-discussionSubmit>
+<app-discussionNotLoggedIn></app-discussionNotLoggedIn>
+<app-discussionLogs></app-discussionLogs>
+

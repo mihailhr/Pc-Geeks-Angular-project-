@@ -1,0 +1,59 @@
+section{
+    display: flex;
+    z-index: -10;
+}
+
+
+.scrollableDivMyNews button{
+  width: 40px;
+  height: 25px;
+  border-radius: 10px;
+  
+}
+.scrollableDivMyNews  i{
+  font-size: 20px;
+  color: #1b1b1b;
+}
+.scrollableDivMyNews p{padding: 100px;}
+
+
+
+.myNews{
+    z-index: 100;
+    position: fixed;
+    top: 400px;
+    right: 100px;
+}
+
+
+  .scrollableDivMyNews{
+    width: 35vw; 
+    max-height: 180px; 
+    overflow-y: auto; 
+    border: 3px solid whitesmoke; 
+    padding: 10px; 
+    background-color: #1b1b1b;
+    position: fixed;
+    top: 220px;
+    right: 80px;
+    
+  }
+  
+  .scrollableDivMyNews p{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+
+  }
+  
+  .scrollableDivMyNews0 h1{
+    color: whitesmoke;
+
+  }
+  .scrollableDivMyNews0{
+    top: 240px;
+    right: 120px;
+    position: fixed;
+    z-index: 100;
+  } 

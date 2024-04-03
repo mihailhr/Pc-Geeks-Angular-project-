@@ -1,0 +1,5 @@
+<div  *ngIf="finalKeysDiscussion.length>0"  class="scrollableDiv1" >
+  <p *ngFor="let key of finalKeysDiscussion">{{allDiscussions[key].title}} <br> {{allDiscussions[key].content}}</p> 
+  
+</div>
+  <h3 *ngIf="finalKeysDiscussion.length<1" >You still haven't participated in The Discussion.</h3>

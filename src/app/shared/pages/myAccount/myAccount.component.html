@@ -1,0 +1,19 @@
+<div class="main"    *ngIf="userInfo.userLoggedIn">
+  <section class="first">
+    <h2>Your contributions to The Discussion:</h2>
+      <app-myAccountDisscussion></app-myAccountDisscussion>
+  </section>
+  <section class="second">
+    <h2>News that you've posted:</h2>
+    
+    <app-myAccountNews></app-myAccountNews>
+  </section>
+  <section class="third">
+    <h2>Rate PC Geeks</h2>
+    <app-myAccountRating></app-myAccountRating>
+ 
+    
+  </section>
+</div>
+<app-deleteAccount></app-deleteAccount>
+

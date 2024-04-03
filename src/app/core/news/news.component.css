@@ -1,0 +1,59 @@
+section{
+    display: flex;
+    z-index: -10;
+}
+.leftPart{ z-index: -10;
+    box-sizing: border-box;
+    background-color: orangered;
+width: 50vw;
+min-height: 77vh;
+padding-top: 70px;
+text-align: center;
+color: whitesmoke;
+}
+
+
+
+.rightPart{
+    z-index: -5;
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+width: 50vw;
+height: 77vh;
+padding-top: 44px;
+gap: 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+.rightPart h1{
+    color: whitesmoke;
+}
+.rightPartNotLoggedIn{
+    z-index: -10;
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+width: 50vw;
+min-height: 77vh;
+padding-top: 200px;
+text-align: center;
+}
+.rightPartNotLoggedIn h1{
+    color: whitesmoke;
+}
+.upper{height: 35vh;
+}
+.lower{height: 35vh;
+z-index: 10;
+position: relative;
+}
+
+
+  .titleValue{font-size: 24px;
+  color: whitesmoke;}
+
+    .lower h1,.upper h1{
+      font-size: 26px;
+    }
+
+  

@@ -1,0 +1,9 @@
+.notUser{
+    width: 100vw;
+    height: 77vh;
+    background-color: orangered;
+    color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

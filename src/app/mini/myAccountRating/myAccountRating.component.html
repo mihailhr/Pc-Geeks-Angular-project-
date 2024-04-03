@@ -1,0 +1,17 @@
+<form  (submit)="ratingSubmit($event,selectField.value)">
+      
+  <h3>Choose you rating on the scale from 1 to 5:</h3>
+  <br>
+<select  name="rating" #selectField id="ratingGiven" >
+  <br>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5" selected>5</option>
+</select>
+<br>
+<input  id="submitInput"  type="submit">
+<h3 *ngIf="match" >It appears that you've already rated us. Submitting again is going to edit the rating that you have given us.</h3>
+<h3 *ngIf="currentAverage>0"> Average rating so far: {{currentAverage}}</h3>
+</form>

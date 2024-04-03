@@ -1,0 +1,33 @@
+
+.scrollable-field {
+    width: 45%; 
+    max-height: 350px; 
+    overflow-y: auto; 
+    border: 5px solid #1b1b1b; 
+    padding: 10px; 
+    position: fixed;
+    top: 240px;
+    left: 30px;
+    background-color: orangered;
+  }
+  
+  
+  .entry {
+    margin-bottom: 20px;
+    border: 2px solid rgb(30, 30, 30);
+    padding: 8px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+  }
+  
+  
+  .value {
+    margin-left: 20px;
+    max-width: 25ch;
+    color: whitesmoke;
+  }
+
+  .titleValue{font-size: 24px;
+  color: whitesmoke;}
+
+   

@@ -1,0 +1,16 @@
+<div class="main"  *ngIf="userInfo.userLoggedIn">
+  <h1>Edit the news that you have posted:</h1>
+  <section class="postNews" *ngIf="userInfo.userLoggedIn">
+    <form  id="myForm" (submit)="onSubmitNews($event,titleInput.value,descriptionInput.value)">
+        <div class="form-group" id="emailDiv">
+            <label for="title">Title</label> <br>
+            <input  [(ngModel)]="titleValue"   type="text" name="email" #titleInput id="title" required>
+        </div>
+        <div class="form-group" id="passwordDiv">
+            <label for="description">Description</label> <br>
+            <textarea [(ngModel)]="descriptionValue"  type="text" name="description" #descriptionInput id="description" required></textarea>
+        </div>
+        <button class="subButton"  type="submit">Submit</button>
+        </form>
+</section>
+</div>

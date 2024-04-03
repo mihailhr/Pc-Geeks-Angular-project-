@@ -1,0 +1,7 @@
+<div class="scrollable-field"> 
+  <div *ngFor="let entry of getObjectEntries(allNews)" class="entry">
+    <div class="titleValue">{{ entry[1].title }}</div>
+    <div class="description">{{ entry[1].description }}</div>
+    <div class="user">{{ entry[1].user }}</div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div  *ngIf="userInfo.userLoggedIn" class="scrollableDiv">
+  <section  class="second">
+   
+      <div  *ngIf="keys.length>0"  class="scrollableDiv2" >
+      <p *ngFor="let key of keys">  {{allDiscussions[key].title}} ~~~~ {{allDiscussions[key].user}} <br> {{allDiscussions[key].content}}   </p>
+      <h2  *ngIf="userInfo.currentUser"  class="title">The Discussion:</h2>
+      
+    </div>
+      <h3 *ngIf="keys.length<1" > The Discussion still has not started.</h3>
+    </section>
+  </div>

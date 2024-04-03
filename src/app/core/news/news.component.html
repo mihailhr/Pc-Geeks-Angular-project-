@@ -1,0 +1,27 @@
+<section>
+<div class="leftPart">
+    <h1>Recent news:</h1>
+   
+</div>
+<div class="rightPart" *ngIf="userInfo.userLoggedIn" >
+    <article class="upper">
+        <h1>Your publications:</h1>
+    </article>
+    <article class="lower">
+        <h1>Post news:</h1>
+        
+    </article>
+    
+    
+</div>
+<div class="rightPartNotLoggedIn" *ngIf="!userInfo.userLoggedIn">
+    <h1>You need to be logged in to post or edit your publications.</h1>
+</div>
+</section>
+
+
+
+<app-allNews></app-allNews>
+<app-myNews></app-myNews>
+<app-postNews></app-postNews>
+   

@@ -1,0 +1,33 @@
+.form{
+    background-color: whitesmoke;
+    color: rgb(30, 30, 30);
+    position: fixed;
+    right: 100px;
+    top: 180px;
+    z-index: 10;
+    padding: 10px;
+
+}
+
+
+
+
+.form textarea{
+    width: 400px;
+    height: 120px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    resize: none;
+    text-indent: 5px;
+}
+
+
+input{width: 398px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+}
+.form label{padding-bottom: 20px;
+margin-bottom: 0px;
+font-size: 20px;}
+
+

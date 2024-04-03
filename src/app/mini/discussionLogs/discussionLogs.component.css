@@ -1,0 +1,35 @@
+
+
+.scrollableDiv {
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+    width: 40vw;
+    height: 34vh;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the total height */
+    z-index: 20;
+}
+.scrollableDiv p{
+    z-index: 20;
+    padding: 10px;
+}
+.second{
+    z-index: 20;
+    ;
+}
+
+.second p{
+    border: 1px solid whitesmoke;
+    margin-bottom: 10px;
+}
+
+
+
+.title{position: fixed;
+bottom: 290px;
+right: 500px;
+color: whitesmoke;}

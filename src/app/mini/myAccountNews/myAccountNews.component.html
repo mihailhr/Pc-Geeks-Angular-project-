@@ -1,0 +1,5 @@
+<div  *ngIf="finalKeys.length>0"  class="scrollableDiv" >
+  <p *ngFor="let key of finalKeys">{{allNews[key].title}} <br> {{allNews[key].description}}</p> 
+  
+</div>
+  <h3 *ngIf="finalKeys.length<1" >You still haven't posted any news.</h3>
