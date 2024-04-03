@@ -1,0 +1,1 @@
+Creation of some new components to follow the SOLID priniclpes, final HTML and CSS adjustments (removal of unnecessary CSS)
