@@ -1,4 +1,4 @@
-За документация отворете documentation.md
+Проектът е изготвян с учебна цел, нуждае се от промени в основната логика и структура, както и от стилизация и deployment.
 # Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
